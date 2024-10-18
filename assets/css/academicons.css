@@ -24,8 +24,13 @@
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  line-height: 1;
+  line-height: 44px;
+  color: #444;
+  background: #2E2E2E;
+  vertical-align: bottom;
+  transition: background-color .2s ease-in-out;
 }
+
 .ai-academia:before {
   content: "\e9af";
 }
@@ -181,6 +186,7 @@
 }
 .ai-google-scholar-square:before {
   content: "\e9f9";
+  background-color: #2E2E2E;
 }
 .ai-hal:before {
   content: "\e92c";
@@ -464,8 +470,8 @@
 /*  Duplication of the FontAwesome style classes using 'ai' in place of 'fa'. */
 .ai-lg {
   font-size: 1.33333em;
-  line-height: 0.75em;
-  vertical-align: -.0667em;
+  line-height: 3em;
+  vertical-align: top;
 }
 .ai-xs {
   font-size: .75em;
@@ -506,8 +512,8 @@
 }
 
 .ai-fw {
-  text-align: center;
-  width: 1.25em;
+  text-align: top;
+  width: 48px;
 }
 
 .ai-ul {
@@ -522,13 +528,13 @@
   left: -2em;
   position: absolute;
   text-align: center;
-  width: 2em;
+  width: 48px;
   line-height: inherit;
 }
 
 .ai-border {
 border: solid 0.08em #eee;
-border-radius: .1em;
+border-radius: 6px;
   padding: .2em .25em .15em;
 }
 
@@ -548,10 +554,10 @@ border-radius: .1em;
 .ai-stack {
   display: inline-block;
   height: 2em;
-  line-height: 2em;
+  line-height: 48px;
   position: relative;
-  vertical-align: middle;
-  width: 2.5em;
+  vertical-align: top;
+  width: 48px;
 }
 .ai-stack-1x,
 .ai-stack-2x {
@@ -568,4 +574,8 @@ border-radius: .1em;
 }
 .ai-inverse {
   color: #fff;
+}
+
+.ai:hover {
+  background-color: transparent;
 }
