@@ -1505,6 +1505,72 @@ input, select, textarea {
 
 		}
 
+/* Banner */
+
+	#banner {
+		background-attachment: scroll,							fixed;
+		background-color: #666;
+		background-image: url("images/classroom_cropped.png"), url("../../images/banner.jpg");
+		background-position: top left,						center center;
+		background-repeat: no-repeat,							no-repeat;
+		background-size: 100%,							cover;
+		color: #fff;
+		padding: 12em 0 12em 0;
+		text-align: center;
+	}
+
+		#banner :last-child {
+			margin-bottom: 0;
+		}
+
+		#banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
+			color: #fff;
+		}
+
+		#banner h2 {
+			font-size: 3.5em;
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			padding: 0;
+		}
+
+		#banner p {
+			font-size: 1.25em;
+			margin-bottom: 1.75em;
+		}
+
+		#banner input[type="submit"],
+		#banner input[type="reset"],
+		#banner input[type="button"],
+		#banner .button {
+			background-color: transparent;
+			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+			color: #fff;
+			min-width: 12em;
+		}
+
+			#banner input[type="submit"]:hover,
+			#banner input[type="reset"]:hover,
+			#banner input[type="button"]:hover,
+			#banner .button:hover {
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+
+			#banner input[type="submit"]:active,
+			#banner input[type="reset"]:active,
+			#banner input[type="button"]:active,
+			#banner .button:active {
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+
+			#banner input[type="submit"].special,
+			#banner input[type="reset"].special,
+			#banner input[type="button"].special,
+			#banner .button.special {
+				background: #fff;
+				color: #666 !important;
+			}
+
 /* Form */
 
 	form label {
@@ -1911,8 +1977,10 @@ input, select, textarea {
 	.box {
 		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		text-align: center;
+		text-align: left;
 		padding: 2em;
+		font-size: 14pt;
+		line-height: 1.5;
 	}
 
 		.box.style1 {
@@ -1920,11 +1988,11 @@ input, select, textarea {
 		}
 
 			.box.style1 h3 {
-				margin-bottom: 0.5em;
+				margin-bottom: 2em;
 			}
 
 		.box.style2 h3 {
-			margin-bottom: 0.25em;
+			margin-bottom: 2em;
 		}
 
 		.box.style2 .image {
@@ -2270,6 +2338,7 @@ input, select, textarea {
 
 			footer {
 				margin: 2.5em 0 0 0;
+
 			}
 
 				footer > p {
